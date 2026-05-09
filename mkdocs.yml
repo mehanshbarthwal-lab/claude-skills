@@ -224,6 +224,7 @@ nav:
       - "LLM Wiki": skills/engineering/llm-wiki.md
       - "TC Tracker": skills/engineering/tc-tracker.md
       - "Karpathy Coder": skills/engineering/karpathy-coder.md
+      - "Feature Flags Architect": skills/engineering/feature-flags-architect.md
       - AgentHub:
         - "AgentHub": skills/engineering/agenthub.md
         - "/hub:init": skills/engineering/agenthub-init.md
@@ -429,3 +430,4 @@ nav:
     - "/wiki-log": commands/wiki-log.md
     - "/tc": commands/tc.md
     - "/karpathy-check": commands/karpathy-check.md
+    - "/flag-cleanup": commands/flag-cleanup.md

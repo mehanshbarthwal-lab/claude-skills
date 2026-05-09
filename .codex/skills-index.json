@@ -3,7 +3,7 @@
   "name": "claude-code-skills",
   "description": "Production-ready skill packages for AI agents - Marketing, Engineering, Product, C-Level, PM, and RA/QM",
   "repository": "https://github.com/alirezarezvani/claude-skills",
-  "total_skills": 183,
+  "total_skills": 184,
   "skills": [
     {
       "name": "business-growth-skills",
@@ -478,6 +478,12 @@
       "source": "../../engineering/skills/env-secrets-manager",
       "category": "engineering-advanced",
       "description": "Env & Secrets Manager"
+    },
+    {
+      "name": "feature-flags-architect",
+      "source": "../../engineering/skills/feature-flags-architect",
+      "category": "engineering-advanced",
+      "description": "Use when adding, retiring, or auditing feature flags. Triggers on \"add a flag\", \"ship behind a flag\", \"rollout plan\", \"kill switch\", \"stale flags\", \"flag debt\", \"LaunchDarkly\", \"GrowthBook\", \"Statsig\", \"Unleash\", \"Flipt\", or any progressive-delivery question. Ships flag debt scanner, rollout planner, and kill-switch auditor (all stdlib Python), 4 references on flag taxonomy + provider trade-offs + rollout strategies + lifecycle, plus a /flag-cleanup slash command."
     },
     {
       "name": "focused-fix",
@@ -1121,7 +1127,7 @@
       "description": "Software engineering and technical skills"
     },
     "engineering-advanced": {
-      "count": 35,
+      "count": 36,
       "source": "../../engineering",
       "description": "Advanced engineering skills - agents, RAG, MCP, CI/CD, databases, observability"
     },

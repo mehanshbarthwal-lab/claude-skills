@@ -5,6 +5,30 @@ All notable changes to the Claude Skills Library will be documented in this file
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased] — Skill Expansion Phase 1
+
+### Added — Engineering POWERFUL
+
+- **feature-flags-architect** — End-to-end feature-flag discipline. Detects stale flags as debt (`flag_debt_scanner.py`), generates phased rollout plans across ring/linear/log/cohort strategies (`rollout_planner.py`), and audits every flag for documented kill switch (`kill_switch_audit.py`). 4 references on flag taxonomy, provider comparison (LaunchDarkly / GrowthBook / Statsig / Unleash / Flipt / DIY), rollout strategies, and lifecycle. Ships standalone plugin AND in the engineering-advanced-skills bundle. New `/flag-cleanup` slash command.
+
+### Added — Repo infrastructure
+
+- **scripts/sync_skill_bundles.py** — mirror standalone plugin payloads into their domain-bundled location; `--check` exits 1 on drift, `--sync` rewrites the mirror. Locks in the dual-publish invariant for every new skill.
+- **scripts/check_plugin_json.py** — strict ClawHub schema validator (exactly 8 fields, semver, `author{name,url}`, `skills` as string or array — bare `"./"` rejected per Claude Code v2.1.107+). Verified against all 31 existing plugin.json files.
+
+### Changed
+
+- **Total skills:** 235 → 236 (+1 new engineering POWERFUL skill)
+- **Python tools:** 314 → 319
+- **References:** 435 → 439
+- **Slash commands:** 27 → 28
+- **engineering-advanced-skills** plugin: v2.3.3 → v2.4.0
+- **marketplace.json**: `feature-flags-architect` registered as standalone plugin
+
+### Fixed
+
+- `tests/test_skill_integrity.py::TestScriptDirectories::test_scripts_dirs_have_python_files` — was rejecting valid skills shipping `.mjs`/`.js`/`.ts`/`.sh` scripts (e.g., `full-page-screenshot`). Now accepts any executable script extension while keeping the "scripts/ dir is non-empty" intent.
+
 ## [2.2.0] - 2026-03-31
 
 ### Added — Security Skills Suite & Self-Eval

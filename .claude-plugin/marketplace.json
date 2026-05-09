@@ -59,8 +59,8 @@
     {
       "name": "engineering-advanced-skills",
       "source": "./engineering",
-      "description": "44 advanced engineering skills: agent designer, agent workflow designer, AgentHub, RAG architect, database designer, focused-fix, browser-automation, spec-driven-workflow, secrets-vault-manager, sql-database-assistant, migration architect, observability designer, dependency auditor, release manager, API reviewer, CI/CD pipeline builder, MCP server builder, skill security auditor, performance profiler, Helm chart builder, Terraform patterns, self-eval, llm-cost-optimizer, prompt-governance, behuman, code-tour, demo-video, data-quality-auditor, statistical-analyst, llm-wiki (second brain for Obsidian + Claude Code, Karpathy pattern), and more.",
-      "version": "2.3.3",
+      "description": "45 advanced engineering skills: agent designer, agent workflow designer, AgentHub, RAG architect, database designer, focused-fix, browser-automation, spec-driven-workflow, secrets-vault-manager, sql-database-assistant, migration architect, observability designer, dependency auditor, release manager, API reviewer, CI/CD pipeline builder, MCP server builder, skill security auditor, performance profiler, Helm chart builder, Terraform patterns, self-eval, llm-cost-optimizer, prompt-governance, behuman, code-tour, demo-video, data-quality-auditor, statistical-analyst, llm-wiki (second brain for Obsidian + Claude Code, Karpathy pattern), feature-flags-architect (flag debt scanner, rollout planner, kill-switch audit), and more.",
+      "version": "2.4.0",
       "author": {
         "name": "Alireza Rezvani"
       },
@@ -567,6 +567,28 @@
         "anti-patterns",
         "review",
         "discipline"
+      ],
+      "category": "development"
+    },
+    {
+      "name": "feature-flags-architect",
+      "source": "./engineering/feature-flags-architect",
+      "description": "End-to-end feature-flag discipline: classify, ship, ramp, retire. Detects stale flags as debt, generates phased rollout plans (ring/linear/log/cohort), and audits every flag for a documented kill switch. 3 stdlib Python tools, 4 references on flag taxonomy + provider trade-offs (LaunchDarkly/GrowthBook/Statsig/Unleash/Flipt/DIY) + rollout strategies + lifecycle. /flag-cleanup slash command. Cross-tool compatible.",
+      "version": "2.4.0",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "feature-flags",
+        "progressive-delivery",
+        "rollout",
+        "kill-switch",
+        "launchdarkly",
+        "growthbook",
+        "statsig",
+        "unleash",
+        "flipt",
+        "release-engineering"
       ],
       "category": "development"
     },
