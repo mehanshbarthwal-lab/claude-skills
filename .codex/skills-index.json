@@ -3,7 +3,7 @@
   "name": "claude-code-skills",
   "description": "Production-ready skill packages for AI agents - Marketing, Engineering, Product, C-Level, PM, and RA/QM",
   "repository": "https://github.com/alirezarezvani/claude-skills",
-  "total_skills": 189,
+  "total_skills": 190,
   "skills": [
     {
       "name": "business-growth-skills",
@@ -76,6 +76,12 @@
       "source": "../../c-level-advisor/skills/change-management",
       "category": "c-level",
       "description": "Framework for rolling out organizational changes without chaos. Covers the ADKAR model adapted for startups, communication templates, resistance patterns, and change fatigue management. Handles process changes, org restructures, strategy pivots, and culture changes. Use when announcing a reorg, switching tools, pivoting strategy, killing a product, changing leadership, or when user mentions change management, change rollout, managing resistance, org change, reorg, or pivot communication."
+    },
+    {
+      "name": "chief-data-officer-advisor",
+      "source": "../../c-level-advisor/skills/chief-data-officer-advisor",
+      "category": "c-level",
+      "description": "Chief Data Officer advisory for startups: AI training data rights and consent provenance, data product strategy (warehouse vs lakehouse vs mesh, build-vs-buy), B2B customer-data-as-asset valuation and M&A readiness, data team org evolution. Use when deciding whether to train models on customer data, choosing data architecture, valuing data for fundraising or M&A, sequencing data hires, or when user mentions CDO, chief data officer, data strategy, data mesh, lakehouse, training data, data product, data monetization, or customer data asset. NOT a tactical data engineering skill \u2014 strategic decisions only."
     },
     {
       "name": "chief-of-staff",
@@ -1147,7 +1153,7 @@
       "description": "Customer success, sales engineering, and revenue operations skills"
     },
     "c-level": {
-      "count": 29,
+      "count": 30,
       "source": "../../c-level-advisor",
       "description": "Executive leadership and advisory skills"
     },
