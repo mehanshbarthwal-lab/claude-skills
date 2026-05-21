@@ -1,0 +1,15 @@
+{
+  "description": "SessionStart hook for the handoff skill. On a new session, scans the configured save location for the most recent handoff (within the retention window) and surfaces it to the agent as <handoff_from_previous_session> data. Disable per-session with HANDOFF_SESSIONSTART=0.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ${CLAUDE_PLUGIN_ROOT}/hooks/session_start.py"
+          }
+        ]
+      }
+    ]
+  }
+}

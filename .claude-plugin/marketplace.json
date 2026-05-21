@@ -971,6 +971,24 @@
       "category": "productivity"
     },
     {
+      "name": "handoff",
+      "source": "./productivity/handoff",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up. Configurable save location (no project clutter), redaction enforcement, SessionStart auto-load, mtime-guarded cleanup. Inspired by Matt Pocock's handoff (MIT).",
+      "version": "2.7.4",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "handoff",
+        "productivity",
+        "session-continuity",
+        "redaction",
+        "session-start-hook",
+        "matt-pocock"
+      ],
+      "category": "productivity"
+    },
+    {
       "name": "landing",
       "source": "./marketing/landing",
       "description": "Single-file HTML landing-page generator with 4 design styles, brand palette validation, GSAP animation patterns, kebab-slug URL hygiene. Path-B from megaprompt 04.",
