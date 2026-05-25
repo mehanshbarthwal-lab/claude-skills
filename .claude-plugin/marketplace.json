@@ -4,11 +4,11 @@
     "name": "Alireza Rezvani",
     "url": "https://alirezarezvani.com"
   },
-  "description": "328 production-ready skill packages for Claude AI across 14 domains: engineering advanced (76 — incl. 4 Matt Pocock-derived productivity skills + v2.7.3 security-guidance PreToolUse hook), engineering core (51), marketing (47 — incl. v2.7.3 AEO/Answer Engine Optimization), c-level advisory (66), product (17), regulatory/QMS (18), project management (9), business growth (5), finance (4), productivity (4, v2.7.0), marketing top-level (2, v2.7.0), research (8, v2.7.0), business-operations (7, v2.8.0), and commercial (8, v2.8.0). Includes ~441 Python tools, ~594 reference documents, 48+ agents, 77+ slash commands.",
+  "description": "329 production-ready skill packages for Claude AI across 14 domains: engineering advanced (76 — incl. 4 Matt Pocock-derived productivity skills + v2.7.3 security-guidance PreToolUse hook), engineering core (51), marketing (47 — incl. v2.7.3 AEO/Answer Engine Optimization), c-level advisory (66), product (17), regulatory/QMS (18), project management (9), business growth (5), finance (4), productivity (4, v2.7.0), marketing top-level (2, v2.7.0), research (8, v2.7.0), business-operations (7, v2.8.0), and commercial (8, v2.8.0). Includes ~441 Python tools, ~594 reference documents, 48+ agents, 77+ slash commands.",
   "homepage": "https://github.com/alirezarezvani/claude-skills",
   "repository": "https://github.com/alirezarezvani/claude-skills",
   "metadata": {
-    "description": "328 production-ready skill packages across 14 domains (engineering, marketing, product, c-level, project management, RA/QM, business growth, finance, productivity, marketing (top-level), research, business-operations [v2.8.0], commercial [v2.8.0], plus standards). ~441 Python tools, ~594 reference guides, 48+ agents (cs-* + personas), 77+ slash commands. v2.8.0 adds 2 new top-level domains (business-operations + commercial) with 15 new skills, context: fork chaining via Matt Pocock grill-with-docs discipline. v2.7.3 adds AEO + security-guidance PreToolUse hook. Compatible with Claude Code, Codex CLI, Gemini CLI, Cursor, OpenClaw, Hermes Agent, and 6 more coding agents.",
+    "description": "329 production-ready skill packages across 14 domains (engineering, marketing, product, c-level, project management, RA/QM, business growth, finance, productivity, marketing (top-level), research, business-operations [v2.8.0], commercial [v2.8.0], plus standards). ~444 Python tools, ~598 reference guides, 49+ agents (cs-* + personas), 79+ slash commands. v2.8.0 adds 2 new top-level domains (business-operations + commercial) with 15 new skills, context: fork chaining via Matt Pocock grill-with-docs discipline. v2.7.3 adds AEO + security-guidance PreToolUse hook. Compatible with Claude Code, Codex CLI, Gemini CLI, Cursor, OpenClaw, Hermes Agent, Mistral Vibe, and 5 more coding agents.",
     "version": "2.8.0"
   },
   "plugins": [
@@ -247,8 +247,8 @@
     {
       "name": "engineering-skills",
       "source": "./engineering-team",
-      "description": "32 engineering skills: architecture, frontend, backend, fullstack, QA, DevOps, security, AI/ML, data engineering, Playwright (9 sub-skills), self-improving agent, Stripe integration, TDD guide, tech stack evaluator, Google Workspace CLI, a11y audit (WCAG 2.2), Azure cloud architect, GCP cloud architect, security pen testing, Snowflake development, adversarial-reviewer, ai-security, cloud-security, incident-response, red-team, threat-detection.",
-      "version": "2.2.3",
+      "description": "32 engineering skills: architecture, frontend, backend, fullstack, QA, DevOps, security, AI/ML, data engineering, Playwright (9 sub-skills), self-improving agent, Stripe integration, TDD guide, tech stack evaluator, Google Workspace CLI, a11y audit (WCAG 2.2), Azure cloud architect, GCP cloud architect, security pen testing, Snowflake development, adversarial-reviewer, ai-security, cloud-security, incident-response, red-team, threat-detection. v2.8.1 audits senior-fullstack / senior-frontend / senior-backend against karpathy-coder + Matt Pocock — each ships a 7-question forcing-question library, 4 customization profiles (JSON), deterministic decision engine, composition map into POWERFUL specialists, plus cs-fullstack-engineer / cs-frontend-engineer / cs-backend-engineer orchestrator agents (context: fork) + /cs:fullstack-review, /cs:frontend-review, /cs:backend-review, /cs:engineer-grill slash commands.",
+      "version": "2.8.1",
       "author": {
         "name": "Alireza Rezvani"
       },
@@ -967,6 +967,46 @@
         "productivity",
         "forcing-question",
         "path-b-megaprompt"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "handoff",
+      "source": "./productivity/handoff",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up. Configurable save location, redaction enforcement, SessionStart auto-load + SessionEnd reminder, self-check fidelity script, --refresh flag, mtime-guarded cleanup. Inspired by Matt Pocock's handoff (MIT).",
+      "version": "2.8.2",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "handoff",
+        "productivity",
+        "session-continuity",
+        "redaction",
+        "session-start-hook",
+        "session-end-hook",
+        "self-check",
+        "matt-pocock"
+      ],
+      "category": "productivity"
+    },
+    {
+      "name": "andreessen",
+      "source": "./productivity/andreessen",
+      "description": "Marc Andreessen-mode decision and productivity skill. Market-first operator that pressure-tests ventures/ideas/features/bets (market > team > product; product/market fit is the only milestone; bias to build) and runs the 3x5-card + Anti-Todo routine. Fixed anti-sycophancy operating prompt: counterargument first, no disclaimers, explicit confidence levels, no capitulation. Issues hard verdicts backed by deterministic stdlib tools.",
+      "version": "2.8.4",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "andreessen",
+        "pmarca",
+        "productivity",
+        "product-market-fit",
+        "market-first",
+        "anti-sycophancy",
+        "decision-making",
+        "anti-todo"
       ],
       "category": "productivity"
     },

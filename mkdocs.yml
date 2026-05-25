@@ -1,6 +1,6 @@
 site_name: Claude Code Skills & Agent Plugins
 site_url: https://alirezarezvani.github.io/claude-skills/
-site_description: "313 production-ready skills, 46+ cs-* agents (incl. founder-mode C-suite: GC, CDO, CAIO, CCO, VPE + Matt Pocock-derived productivity quartet: skill-author, caveman, grill-master, handoff + v2.7.0 megaprompt-derived research stack + v2.7.3 cs-aeo), 7 personas, 60+ /cs:* slash commands, and an orchestration protocol for 12 AI coding tools. v2.7.3 ports `alirezarezvani/aeo-box` — adds AEO (Answer Engine Optimization for LLM citation across ChatGPT / Perplexity / Claude / Gemini / Mistral) into marketing-skill and a security-guidance PreToolUse hook into engineering."
+site_description: "330 production-ready skills, 50+ cs-* agents (incl. founder-mode C-suite: GC, CDO, CAIO, CCO, VPE + Matt Pocock-derived productivity quartet: skill-author, caveman, grill-master, handoff + v2.8.2 productivity/handoff + v2.8.1 engineering role-skills + v2.7.0 megaprompt-derived research stack + v2.7.3 cs-aeo + v2.8.0 business-operations + commercial + v2.8.4 productivity/andreessen), 7 personas, 81+ /cs:* slash commands, and an orchestration protocol for 13 AI coding tools (Claude Code · Codex · Gemini CLI · Hermes Agent · Mistral Vibe · OpenClaw · Cursor · Aider · Windsurf · Kilo Code · OpenCode · Augment · Antigravity). v2.8.3 adds Mistral Vibe cross-platform sync; v2.8.4 adds productivity/andreessen (market-first decision mode)."
 site_author: Alireza Rezvani
 repo_url: https://github.com/alirezarezvani/claude-skills
 repo_name: alirezarezvani/claude-skills
@@ -426,6 +426,8 @@ nav:
       - "Inbox Setup (KB Builder)": skills/productivity/email-inbox-setup.md
       - "Inbox Triage (Drafts-Only)": skills/productivity/email-inbox-triage.md
       - "Reflect (Light-Prompt Journal)": skills/productivity/reflect.md
+      - "Handoff (Matt Pocock-inspired)": skills/productivity/handoff.md
+      - "Andreessen (Market-First Decisions)": skills/productivity/andreessen.md
     - Marketing (Landing Pages):
       - Overview: skills/marketing/index.md
       - "Landing Page Generator (HTML)": skills/marketing/landing.md
@@ -505,6 +507,7 @@ nav:
     - "CS Handoff Author (Matt Pocock-derived)": agents/cs-handoff-author.md
     - "CS BizOps Orchestrator (v2.8.0)": agents/cs-bizops-orchestrator.md
     - "CS Commercial Orchestrator (v2.8.0)": agents/cs-commercial-orchestrator.md
+    - "CS Andreessen (Market-First Operator)": agents/cs-andreessen.md
   - Commands:
     - Overview: commands/index.md
     - "/a11y-audit": commands/a11y-audit.md
@@ -558,3 +561,5 @@ nav:
     - "/cs:commercial-policy (v2.8.0)": commands/cs-commercial-policy.md
     - "/cs:rfp-respond (v2.8.0)": commands/cs-rfp-respond.md
     - "/cs:commercial-forecast (v2.8.0)": commands/cs-commercial-forecast.md
+    - "/cs:andreessen (Market-First Verdict)": commands/cs-andreessen.md
+    - "/cs:pmf-check (Product/Market Fit)": commands/cs-pmf-check.md

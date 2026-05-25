@@ -1,13 +1,13 @@
 ---
 title: "AI Coding Agents — Agent-Native Orchestrators & Codex Skills"
-description: "75 agent-native orchestrators for Claude Code, Codex CLI, and Gemini CLI — multi-skill AI agents across engineering, product, marketing, and more."
+description: "80 agent-native orchestrators for Claude Code, Codex CLI, and Gemini CLI — multi-skill AI agents across engineering, product, marketing, and more."
 ---
 
 <div class="domain-header" markdown>
 
 # :material-robot: Agents
 
-<p class="domain-count">75 agents that orchestrate skills across domains</p>
+<p class="domain-count">80 agents that orchestrate skills across domains</p>
 
 </div>
 
@@ -30,6 +30,24 @@ description: "75 agent-native orchestrators for Claude Code, Codex CLI, and Gemi
     ---
 
     C-Level Advisory
+
+-   :material-rocket-launch:{ .lg .middle } **[cs-backend-engineer — Backend Orchestrator](cs-backend-engineer.md)**
+
+    ---
+
+    Engineering - POWERFUL
+
+-   :material-rocket-launch:{ .lg .middle } **[cs-frontend-engineer — Frontend Orchestrator](cs-frontend-engineer.md)**
+
+    ---
+
+    Engineering - POWERFUL
+
+-   :material-rocket-launch:{ .lg .middle } **[cs-fullstack-engineer — Fullstack Orchestrator](cs-fullstack-engineer.md)**
+
+    ---
+
+    Engineering - POWERFUL
 
 -   :material-rocket-launch:{ .lg .middle } **[karpathy-reviewer](cs-karpathy-reviewer.md)**
 
@@ -241,6 +259,12 @@ description: "75 agent-native orchestrators for Claude Code, Codex CLI, and Gemi
 
     Engineering - POWERFUL
 
+-   :material-rocket-launch:{ .lg .middle } **[cs-claude-coach — Power-User Coach Persona](cs-claude-coach.md)**
+
+    ---
+
+    Engineering - POWERFUL
+
 -   :material-rocket-launch:{ .lg .middle } **[Grill Master Agent](cs-grill-master.md)**
 
     ---
@@ -372,6 +396,12 @@ description: "75 agent-native orchestrators for Claude Code, Codex CLI, and Gemi
     ---
 
     C-Level Advisory
+
+-   :material-account:{ .lg .middle } **[Andreessen Agent](cs-andreessen.md)**
+
+    ---
+
+    Productivity
 
 -   :material-account:{ .lg .middle } **[Capture Agent](cs-capture.md)**
 
