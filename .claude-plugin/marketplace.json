@@ -4,12 +4,12 @@
     "name": "Alireza Rezvani",
     "url": "https://alirezarezvani.com"
   },
-  "description": "329 production-ready skill packages for Claude AI across 14 domains: engineering advanced (76 — incl. 4 Matt Pocock-derived productivity skills + v2.7.3 security-guidance PreToolUse hook), engineering core (51), marketing (47 — incl. v2.7.3 AEO/Answer Engine Optimization), c-level advisory (66), product (17), regulatory/QMS (18), project management (9), business growth (5), finance (4), productivity (4, v2.7.0), marketing top-level (2, v2.7.0), research (8, v2.7.0), business-operations (7, v2.8.0), and commercial (8, v2.8.0). Includes ~441 Python tools, ~594 reference documents, 48+ agents, 77+ slash commands.",
+  "description": "338 production-ready skill packages for Claude AI across 16 domains: engineering advanced (76 — incl. 4 Matt Pocock-derived productivity skills + v2.7.3 security-guidance PreToolUse hook), engineering core (51), marketing (47 — incl. v2.7.3 AEO/Answer Engine Optimization), c-level advisory (66), product (17), regulatory/QMS (18), project management (9), business growth (5), finance (4), productivity (4, v2.7.0), marketing top-level (2, v2.7.0), research (8, v2.7.0), business-operations (7, v2.8.0), and commercial (8, v2.8.0). Includes ~441 Python tools, ~594 reference documents, 48+ agents, 77+ slash commands.",
   "homepage": "https://github.com/alirezarezvani/claude-skills",
   "repository": "https://github.com/alirezarezvani/claude-skills",
   "metadata": {
-    "description": "329 production-ready skill packages across 14 domains (engineering, marketing, product, c-level, project management, RA/QM, business growth, finance, productivity, marketing (top-level), research, business-operations [v2.8.0], commercial [v2.8.0], plus standards). ~444 Python tools, ~598 reference guides, 49+ agents (cs-* + personas), 79+ slash commands. v2.8.0 adds 2 new top-level domains (business-operations + commercial) with 15 new skills, context: fork chaining via Matt Pocock grill-with-docs discipline. v2.7.3 adds AEO + security-guidance PreToolUse hook. Compatible with Claude Code, Codex CLI, Gemini CLI, Cursor, OpenClaw, Hermes Agent, Mistral Vibe, and 5 more coding agents.",
-    "version": "2.8.0"
+    "description": "338 production-ready skills across 16 domains (engineering, engineering-core, marketing, product, c-level, compliance-os, project management, RA/QM, business growth, finance, productivity, marketing (top-level), research, research-ops, business-operations, commercial, plus standards). 533 Python tools, 676 reference guides, 51+ agents (cs-* + personas), 87+ slash commands across 62 marketplace plugins. v2.9.0 adds the research-ops domain — enterprise Research Operations (clinical-research + research-finance + market-research + product-research + orchestrator) with per-skill onboarding, customization config, and an opt-in autoresearch bridge. Compatible with Claude Code, Codex CLI, Gemini CLI, Cursor, OpenClaw, Hermes Agent, Mistral Vibe, and 5 more coding agents.",
+    "version": "2.9.0"
   },
   "plugins": [
     {
@@ -879,7 +879,7 @@
       "category": "development"
     },
     {
-      "name": "handoff",
+      "name": "handoff-engineering",
       "source": "./engineering/handoff",
       "description": "Conversation-handoff document generator. Compacts the current session into a markdown handoff for a fresh agent — references existing artifacts (PRDs, plans, ADRs, issues, commits) by path/URL instead of duplicating them. Derived from Matt Pocock's MIT-licensed handoff with: (1) 3 stdlib Python tools (template generator tailored to 5 next-session emphases, artifact deduplicator across 5 categories of duplication, skill recommender matching content to 14 skills in this repo), (2) 4 references citing 7-8 sources (handoff structure, deduplication discipline, next-session skill matching, companion tooling), (3) cs-handoff-author persona agent + /cs:handoff slash command. Matt's no-duplication discipline + mktemp convention preserved verbatim per MIT.",
       "version": "2.6.0",
@@ -971,7 +971,7 @@
       "category": "productivity"
     },
     {
-      "name": "handoff",
+      "name": "handoff-productivity",
       "source": "./productivity/handoff",
       "description": "Compact the current conversation into a handoff document for another agent to pick up. Configurable save location, redaction enforcement, SessionStart auto-load + SessionEnd reminder, self-check fidelity script, --refresh flag, mtime-guarded cleanup. Inspired by Matt Pocock's handoff (MIT).",
       "version": "2.8.2",
@@ -1331,6 +1331,51 @@
         "automation"
       ],
       "category": "development"
+      "name": "research-ops-skills",
+      "source": "./research-ops",
+      "description": "Enterprise / cross-functional Research Operations domain — the managed counterpart to the academic research/ domain. v2.9.0 ships 5 skills: orchestrator (context: fork) + clinical-research (study design: protocol synopsis + endpoint selection + sample-size/power for means/proportions/survival + phase-gate feasibility) + research-finance (R&D program budgeting with F&A split + burn/runway + capitalize-vs-expense routing + portfolio ROI) + market-research (TAM/SAM/SOM computed both top-down and bottoms-up + survey sampling with FPC and per-segment minima + Kotler segmentation scoring) + product-research (goal-matched study design + method-based saturation with confidence + insight synthesis that flags single-source anecdotes). Hard rules: clinical outputs are estimates with a named clinical owner (never fact), finance outputs surface assumptions and route capex-vs-opex to a named finance owner (never auto-decide), market sizes show method + assumptions (never a single number), product insights require recurrence across independent participants. Each sub-skill ships per-skill onboarding questions (onboard.py), a customization config consumed by every tool, and an isolated opt-in autoresearch evaluator (ar_evaluator.py) bridging to engineering/autoresearch-agent. 24 stdlib Python tools (12 analysis + 12 onboarding/customization/autoresearch), 12 reference docs. Distinct from ra-qm-team (regulatory/QM submission), finance (corporate close/valuation), research/grants (funding discovery), product-team (persona/journey/live experiments), marketing-skill (campaign analytics).",
+      "version": "2.9.0",
+      "author": {
+        "name": "Alireza Rezvani"
+      },
+      "keywords": [
+        "research-ops",
+        "research-operations",
+        "clinical-research",
+        "study-design",
+        "endpoint-selection",
+        "sample-size",
+        "power-analysis",
+        "phase-gate",
+        "biostatistics",
+        "research-finance",
+        "rd-budget",
+        "burn-rate",
+        "runway",
+        "fa-rate",
+        "capitalize-vs-expense",
+        "portfolio-roi",
+        "market-research",
+        "tam-sam-som",
+        "market-sizing",
+        "survey-design",
+        "sampling",
+        "segmentation",
+        "competitive-intelligence",
+        "product-research",
+        "ux-research",
+        "jtbd",
+        "usability",
+        "saturation",
+        "insight-synthesis",
+        "research-repository",
+        "onboarding",
+        "customization",
+        "autoresearch",
+        "matt-pocock",
+        "grill-with-docs"
+      ],
+      "category": "research-ops"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "name": "gemini-cli-skills",
-  "total_skills": 395,
+  "total_skills": 400,
   "skills": [
     {
       "name": "README",
@@ -826,7 +826,7 @@
     {
       "name": "code-reviewer",
       "category": "engineering",
-      "description": "Code review automation for TypeScript, JavaScript, Python, Go, Swift, Kotlin, C#, and .NET. Analyzes PRs for complexity and risk, checks code quality for SOLID violations and code smells, generates review reports. Use when reviewing pull requests, analyzing code quality, identifying issues, generating review checklists."
+      "description": "Code review automation for TypeScript, JavaScript, Python, Go, Swift, Kotlin, C#, .NET, and Java. Analyzes PRs for complexity and risk, checks code quality for SOLID violations and code smells, generates review reports. Use when reviewing pull requests, analyzing code quality, identifying issues, generating review checklists."
     },
     {
       "name": "coverage",
@@ -1977,6 +1977,31 @@
       "name": "syllabus",
       "category": "research",
       "description": "Generates a curated supplementary reading list from any course syllabus using Consensus academic search. Grill-me intake (syllabus input format + course audience + year range) plus a grouping forcing-options checkpoint before any search runs \u2014 so the reading list matches the course's level and recency need. Parses the syllabus to extract topics and learning outcomes, searches Consensus for recent peer-reviewed papers per topic, and produces a professionally formatted .docx with clickable Consensus links, plain-language summaries calibrated to audience level, and Bloom-higher-order discussion questions tied to course learning goals. Triggers whenever a user uploads a syllabus, course outline, or curriculum document and wants supplementary readings. Also triggers on: 'syllabus reading list', 'find papers for my course', 'create a reading list from this syllabus', 'recent research for my class', 'supplementary readings', 'find journal articles for these topics', 'what recent papers cover this material', 'any new research on these course topics', 'update my syllabus with recent papers'. Even casual mentions when a syllabus is attached should trigger this skill."
+    },
+    {
+      "name": "clinical-research",
+      "category": "research-ops",
+      "description": "Use when designing a prospective clinical study before submission \u2014 selecting and classifying endpoints (primary / key-secondary / exploratory, with surrogate-endpoint flagging), estimating sample size and power for two-arm designs (means / proportions / survival), or scoring a study plan for feasibility and a GO / GO-WITH-CONDITIONS / REDESIGN / NO-GO phase-gate decision. Every output is an ESTIMATE plus a named human owner (clinician / biostatistician / regulatory owner) \u2014 never clinical fact, never a finished protocol. Distinct from ra-qm-team, which handles the regulatory/QM submission (ISO 13485, EU MDR, FDA 510(k)/PMA/QSR), not the study design."
+    },
+    {
+      "name": "market-research",
+      "category": "research-ops",
+      "description": "Use when doing upstream market-research methodology \u2014 sizing a market as TAM/SAM/SOM computed BOTH top-down and bottoms-up (never a single unsourced number), planning a survey sample size with finite-population correction and per-segment minimums, or scoring candidate market segments against Kotler's measurable/substantial/accessible/differentiable/actionable criteria. Outputs always show the method and the assumptions. For market-research analysts and product-marketing at the sizing/survey/segmentation moment. Distinct from marketing-skill (campaign analytics, attribution, demand-gen) \u2014 this is the evidence-building methodology, not live-campaign optimization."
+    },
+    {
+      "name": "product-research",
+      "category": "research-ops",
+      "description": "Use when planning and synthesizing product/user research as a method-and-repository discipline \u2014 selecting the right method for the goal (generative interviews vs usability test vs concept test vs validation), computing method-based saturation/sample size with an explicit confidence level, or synthesizing coded observations into insights while flagging single-source anecdotes. Never fabricates user insight; an insight requires recurrence across independent participants. Distinct from product-team/ux-researcher-designer (persona/journey artifacts), product-discovery (discovery-sprint planning), and experiment-designer (live A/B) \u2014 this is the research-ops method + insight-repository layer."
+    },
+    {
+      "name": "research-finance",
+      "category": "research-ops",
+      "description": "Use when managing the money for an internal R&D program or portfolio \u2014 building a multi-period program budget with the F&A (indirect) split, tracking burn rate and runway against value-inflection milestones, or routing R&D cost items to a capitalize-vs-expense determination. Every budget output surfaces its assumptions block; capitalize-vs-expense is decision-support only and routes to a named finance owner \u2014 it never books an entry or decides accounting treatment. Distinct from finance/financial-analysis (corporate DCF, close, valuation) and research/grants (funding discovery \u2014 this manages money already won)."
+    },
+    {
+      "name": "research-ops-skills",
+      "category": "research-ops",
+      "description": "Use when planning, funding, scoping, or synthesizing enterprise research across workstreams \u2014 clinical study design, R&D program finance, market sizing/surveys, or product/user research. Triggers on \"design this clinical study\", \"what sample size\", \"R&D budget\", \"burn rate\", \"capitalize or expense\", \"TAM SAM SOM\", \"market sizing\", \"survey design\", \"segment the market\", \"plan user interviews\", \"usability test\", \"synthesize research insights\". Forks context to route to one of four Research-Operations sub-skills (clinical-research, research-finance, market-research, product-research) and returns a digest. Distinct from ra-qm-team (regulatory submission), finance (corporate close/valuation), research/grants (funding discovery), product-team (persona/journey/live experiments), and marketing-skill (campaign analytics)."
     }
   ],
   "categories": {
@@ -2043,6 +2068,10 @@
     "research": {
       "count": 8,
       "description": "Research resources"
+    },
+    "research-ops": {
+      "count": 5,
+      "description": "Research-ops resources"
     }
   }
 }
