@@ -289,7 +289,7 @@ Skip Steps 3–6 entirely on empty inbox.
 
 ## References
 
-- [`references/kb_file_contract.md`](references/kb_file_contract.md) — canonical 7-file contract (read perspective; mirrors `inbox-setup/references/kb_file_contract.md`)
+- [`references/kb_file_contract.md`](references/kb_file_contract.md) — canonical 7-file contract (read perspective; mirrors `../inbox-setup/references/kb_file_contract.md`)
 - [`references/triage_decision_framework.md`](references/triage_decision_framework.md) — TAKE IT / WORTH / PASS / FLAG taxonomy
 - [`references/drafts_only_safety.md`](references/drafts_only_safety.md) — the NEVER-SEND discipline canon
 

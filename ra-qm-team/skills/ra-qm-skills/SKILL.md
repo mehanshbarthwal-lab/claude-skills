@@ -26,7 +26,7 @@ agents:
 
 ### Claude Code
 ```
-/read ra-qm-team/regulatory-affairs-head/SKILL.md
+/read ra-qm-team/skills/regulatory-affairs-head/SKILL.md
 ```
 
 ### Codex CLI
@@ -56,8 +56,8 @@ npx agent-skills-cli add alirezarezvani/claude-skills/ra-qm-team
 17 scripts, all stdlib-only:
 
 ```bash
-python3 risk-management-specialist/scripts/risk_matrix_calculator.py --help
-python3 gdpr-dsgvo-expert/scripts/gdpr_compliance_checker.py --help
+python3 ra-qm-team/skills/risk-management-specialist/scripts/risk_matrix_calculator.py --help
+python3 ra-qm-team/skills/gdpr-dsgvo-expert/scripts/gdpr_compliance_checker.py --help
 ```
 
 ## Rules

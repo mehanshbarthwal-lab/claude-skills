@@ -380,10 +380,10 @@ Status page: {link}
 echo '{"description": "Users reporting 500 errors, database connections timing out", "affected_users": "80%", "business_impact": "high"}' | python scripts/incident_classifier.py
 
 # Reconstruct timeline from logs
-python scripts/timeline_reconstructor.py --input assets/db_incident_events.json --output timeline.md
+python scripts/timeline_reconstructor.py --input assets/sample_timeline_events.json --output timeline.md
 
 # Generate PIR after resolution
-python scripts/pir_generator.py --incident assets/db_incident_data.json --timeline timeline.md --output pir.md
+python scripts/pir_generator.py --incident assets/sample_incident_data.json --timeline timeline.md --output pir.md
 ```
 
 ### Example 2: API Rate Limiting Incident
@@ -393,10 +393,10 @@ python scripts/pir_generator.py --incident assets/db_incident_data.json --timeli
 echo "API rate limits causing customer API calls to fail" | python scripts/incident_classifier.py --format text
 
 # Build timeline from multiple sources
-python scripts/timeline_reconstructor.py --input assets/api_incident_logs.json --detect-phases --gap-analysis
+python scripts/timeline_reconstructor.py --input assets/simple_timeline_events.json --detect-phases --gap-analysis
 
 # Generate comprehensive PIR
-python scripts/pir_generator.py --incident assets/api_incident_summary.json --rca-method fishbone --action-items
+python scripts/pir_generator.py --incident assets/sample_incident_pir_data.json --rca-method fishbone --action-items
 ```
 
 ## Best Practices

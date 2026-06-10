@@ -26,13 +26,13 @@ agents:
 
 ### Claude Code
 ```
-/read marketing-skill/marketing-ops/SKILL.md
+/read marketing-skill/skills/marketing-ops/SKILL.md
 ```
 The router will direct you to the right specialist skill.
 
 ### Codex CLI
 ```bash
-codex --full-auto "Read marketing-skill/marketing-ops/SKILL.md, then help me write a blog post about [topic]"
+codex --full-auto "Read marketing-skill/skills/marketing-ops/SKILL.md, then help me write a blog post about [topic]"
 ```
 
 ### OpenClaw
@@ -78,22 +78,22 @@ All scripts are stdlib-only (zero pip installs), CLI-first with JSON output, and
 
 ```bash
 # Content scoring
-python3 marketing-skill/content-production/scripts/content_scorer.py article.md
+python3 marketing-skill/skills/content-production/scripts/content_scorer.py article.md
 
 # AI writing detection
-python3 marketing-skill/content-humanizer/scripts/humanizer_scorer.py draft.md
+python3 marketing-skill/skills/content-humanizer/scripts/humanizer_scorer.py draft.md
 
 # Brand voice analysis
-python3 marketing-skill/content-production/scripts/brand_voice_analyzer.py copy.txt
+python3 marketing-skill/skills/content-production/scripts/brand_voice_analyzer.py copy.txt
 
 # Ad copy validation
-python3 marketing-skill/ad-creative/scripts/ad_copy_validator.py ads.json
+python3 marketing-skill/skills/ad-creative/scripts/ad_copy_validator.py ads.json
 
 # Pricing scenario modeling
-python3 marketing-skill/pricing-strategy/scripts/pricing_modeler.py
+python3 marketing-skill/skills/pricing-strategy/scripts/pricing_modeler.py
 
 # Tracking plan generation
-python3 marketing-skill/analytics-tracking/scripts/tracking_plan_generator.py
+python3 marketing-skill/skills/analytics-tracking/scripts/tracking_plan_generator.py
 ```
 
 ## Unique Features

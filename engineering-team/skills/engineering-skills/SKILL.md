@@ -26,7 +26,7 @@ agents:
 
 ### Claude Code
 ```
-/read engineering-team/senior-fullstack/SKILL.md
+/read engineering-team/skills/senior-fullstack/SKILL.md
 ```
 
 ### Codex CLI

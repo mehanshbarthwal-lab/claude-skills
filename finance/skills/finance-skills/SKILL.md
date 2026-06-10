@@ -24,7 +24,7 @@ Production-ready financial analysis skill for strategic decision-making.
 
 ### Claude Code
 ```
-/read finance/financial-analyst/SKILL.md
+/read finance/skills/financial-analyst/SKILL.md
 ```
 
 ### Codex CLI
@@ -43,10 +43,10 @@ npx agent-skills-cli add alirezarezvani/claude-skills/finance
 4 scripts, all stdlib-only:
 
 ```bash
-python3 financial-analyst/scripts/ratio_calculator.py --help
-python3 financial-analyst/scripts/dcf_valuation.py --help
-python3 financial-analyst/scripts/budget_variance_analyzer.py --help
-python3 financial-analyst/scripts/forecast_builder.py --help
+python3 finance/skills/financial-analyst/scripts/ratio_calculator.py --help
+python3 finance/skills/financial-analyst/scripts/dcf_valuation.py --help
+python3 finance/skills/financial-analyst/scripts/budget_variance_analyzer.py --help
+python3 finance/skills/financial-analyst/scripts/forecast_builder.py --help
 ```
 
 ## Rules

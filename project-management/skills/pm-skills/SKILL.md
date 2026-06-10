@@ -25,7 +25,7 @@ agents:
 
 ### Claude Code
 ```
-/read project-management/jira-expert/SKILL.md
+/read project-management/skills/jira-expert/SKILL.md
 ```
 
 ### Codex CLI
@@ -49,8 +49,8 @@ npx agent-skills-cli add alirezarezvani/claude-skills/project-management
 6 scripts, all stdlib-only:
 
 ```bash
-python3 senior-pm/scripts/project_health_dashboard.py --help
-python3 scrum-master/scripts/velocity_analyzer.py --help
+python3 project-management/skills/senior-pm/scripts/project_health_dashboard.py --help
+python3 project-management/skills/scrum-master/scripts/velocity_analyzer.py --help
 ```
 
 ## Rules
