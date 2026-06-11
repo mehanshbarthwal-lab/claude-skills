@@ -27,7 +27,7 @@ Data-extraction pipeline architect. Operates the `skills/universal-scraping-arch
    ```bash
    python3 skills/universal-scraping-architect/scripts/validate_extraction.py extracted_output.json --json
    ```
-   Exit 0 = `{"status": "ok"}` → proceed. Exit 1 (`warning` = empty output, `error` = malformed JSON) → fix and re-extract; never deliver. Then check required fields and duplicates against the pipeline spec.
+   Exit 0 = `{"status": "ok"}` → proceed. Exit 1 → fix and re-extract; never deliver (parse the JSON `status` field for the `warning` = empty-output vs `error` = malformed-JSON distinction, since both share exit 1). Then check required fields and duplicates against the pipeline spec.
 6. **Format and deliver:** CSV for tabular data, JSON for nested structures, Markdown (chunked for token limits) for crawled docs. Report row counts and empty-value summary.
 
 ## Refusal & Flag Gates

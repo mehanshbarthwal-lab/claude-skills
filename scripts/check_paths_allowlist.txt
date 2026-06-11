@@ -33,5 +33,6 @@ engineering-team/self-improving-agent/skills/extract/SKILL.md :: docker-m1-fixes
 engineering-team/self-improving-agent/skills/extract/SKILL.md :: api-client-regen/SKILL.md
 
 # Path-traversal attack payload in a pen-testing teaching table, not a real
-# file reference. Resolves to the host /etc/passwd only on deep checkouts.
+# file reference. Would point outside the repo root if resolved literally;
+# allowlisted as a teaching example, not an actual file.
 engineering-team/skills/security-pen-testing/SKILL.md :: ../../../etc/passwd

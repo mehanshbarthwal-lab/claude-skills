@@ -158,6 +158,8 @@ def main(argv=None):
 
     if failures:
         return 1
+    # Only reached when no --help failures; a real failure (exit 1) takes
+    # precedence over allowlist hygiene (exit 3).
     if stale_exceptions:
         return 3
     return 0

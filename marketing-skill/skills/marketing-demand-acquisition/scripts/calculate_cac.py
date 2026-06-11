@@ -6,6 +6,7 @@ Calculate blended and channel-specific CAC for marketing campaigns.
 Supports multiple time periods and channel breakdowns.
 """
 
+import argparse
 import sys
 from typing import Dict, List
 
@@ -100,7 +101,6 @@ def main():
     print("Blended Target: <$300")
 
 if __name__ == "__main__":
-    import argparse
     parser = argparse.ArgumentParser(
         description="Calculate blended and channel-specific CAC.",
         formatter_class=argparse.RawDescriptionHelpFormatter,
