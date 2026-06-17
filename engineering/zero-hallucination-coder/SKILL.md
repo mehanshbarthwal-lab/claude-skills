@@ -229,7 +229,7 @@ If any story has a gap, write a micro-story to close it and run Phase 4 again fo
 
 ---
 
-## Anti-Hallucination Rules
+## Anti-Patterns
 
 **Rule 1 — No invented APIs.** If Claude is not certain a method exists in the stated library version, it either asks or writes `// ⚠ ASSUMED: verify this method exists`.
 
@@ -303,7 +303,7 @@ Surface these without being asked when noticed in context:
 
 ---
 
-## Related Skills
+## Cross-References
 
 - **senior-architect**: Use for pure architecture decisions with no immediate implementation. NOT for tasks where code will be written in the same session.
 - **playwright-pro**: Use when the task is specifically writing or debugging Playwright tests. This skill handles the zero-hallucination wrapper around it.
