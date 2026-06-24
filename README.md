@@ -170,6 +170,7 @@ Run `./scripts/convert.sh --tool all` to generate tool-specific outputs locally.
 | **🏭 Business Operations** | 7 | Orchestrator + process-mapper, vendor-management, capacity-planner, internal-comms, knowledge-ops, procurement-optimizer | [business-operations/](business-operations/) |
 | **🤝 Commercial** | 8 | Orchestrator + pricing-strategist, deal-desk, partnerships-architect, channel-economics, commercial-policy, rfp-responder, commercial-forecaster | [commercial/](commercial/) |
 | **💰 Finance** | 4 | Financial analyst (DCF, budgeting, forecasting), SaaS metrics coach, business investment advisor | [finance/](finance/) |
+| **🔄 Loop Library** | 1 | `loop-library` — discover, find, audit/repair, adapt, and design bounded AI-agent loops; reads the live catalog from signals.forwardfuture.ai at runtime (vendored verbatim from [Forward-Future/loop-library](https://github.com/Forward-Future/loop-library)) | [loop-library/](loop-library/) |
 
 ---
 
