@@ -56,7 +56,7 @@ The `cs-deep-research` agent orchestrates the `deep-research` skill to turn "res
 ## Related Agents
 
 - [cs-pulse](../../pulse/agents/cs-pulse.md) — recency/sentiment research sibling
-- [cs-research](../../research/agents/) — the fast router/orchestrator
+- [cs-research](../../research/agents/cs-research.md) — the fast router/orchestrator
 
 ---
 
